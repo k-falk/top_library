@@ -104,9 +104,10 @@ function displayBooks(){
 
 
 // TODO
-// Add button for adding books
-// Add popup for entering book info
-// Add button for toggling is read
+// Add button for adding books 	✔
+// Add popup for entering book info 	✔
+// Add button for toggling is read 	✔
 
 // Tweak book display
 // Add button for removing
+//Refactor all code and especially event listeners
