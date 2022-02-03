@@ -15,7 +15,23 @@
             <h1 class = "title">Library</h1>
         </div>
         <div class = "body">
-            <button>Add Book</button>
+            <button class = "add-book-button">Add Book</button>
+        </div>
+        <div id = "modal">
+            <form class="add-book-form" id="addBookForm">
+                <h3 class = "modal-title">Add new book</h3>
+                <input class="input" type="text" id="title" placeholder="Title" required="">
+                <input class="input" type="text" id="author" placeholder="Author" required="">
+                <input class="input" type="number" id="pages" placeholder="Pages" required="">
+                <div class="is-read">
+                    <label for="is-read">Have you read it?</label>
+                    <input class="checkbox" type="checkbox" id="isRead">
+                </div>
+                <button class = "close-modal-button" type = "submit" >Submit</button>
+            </form>
+           
+
+      
         </div>
         <div class = "library">
 

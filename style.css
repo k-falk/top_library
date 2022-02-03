@@ -34,17 +34,19 @@ html, body{
     justify-content: flex-start;
 }
 
-button {
+.add-book-button {
     margin-top: 10em;
     min-width: 20em;
-    max-width: 70%;
-    min-height: 4em;
-    max-height: 70%;
+    min-height: 5em;
     background-color: #058ED9;
     border: none;
     outline: none;
     border-radius: 5px;
+    cursor: pointer;
 }
+
+
+
 button:hover{
     transform: scale(1.1);
 }
@@ -72,3 +74,64 @@ button:hover{
     color: #483D3F;
 }
 
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    height: 15rem;
+    background-color: #ccc;
+    border-radius: 2rem;
+    transform: translate(-50%, -50%) scale(0);
+    box-shadow: 0 2rem 5rem 0 #00000040;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal.open { 
+    animatioN: open 0.5s forwards;
+}
+
+#modal.close {
+    animation: close 0.5s forwards;
+}
+
+@keyframes open{
+    0%{
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes close{
+    100%{
+        transform: translate(-50%,-50%) scale(0);
+    }
+    0%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
+#addBookForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.close-modal-button {
+    min-width: 5em;
+    min-height: 3em;
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    cursor: pointer;
+    background-color: #F4EBD9;
+    justify-self: flex-end;
+    
+}
